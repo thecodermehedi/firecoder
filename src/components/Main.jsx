@@ -19,15 +19,15 @@ const Main = ({toast}) => {
     const newTotalCreditHour = totalCreditHour + card.credit;
     const newRemainingCreditHour = remainingCreditHour - card.credit;
     if (courseNames.includes(card)) {
-      toast.warn(`You have already selected ${card.title}`);
+      toast.warn("Item already added!");
       return;
     } else if (newTotalCreditHour > 20 || newRemainingCreditHour < 0) {
-      toast.error("Credit limit reached");
+      toast.error("Credit limit reached. Cannot add item!");
       return;
     } else {
       const newCourseNames = [...courseNames, card];
       setCourseNames(newCourseNames);
-      toast.success(`You have selected ${card.title}`);
+      toast.success("Item added successfully!");
       setTotalCreditHour(newTotalCreditHour);
       setRemainingCreditHour(newRemainingCreditHour);
     }
