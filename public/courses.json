@@ -8,7 +8,7 @@
     "title": "Introduction to JavaScript",
     "tags": ["#JavaScript", "#Programming", "#WebDev"],
     "readingTime": 10,
-    "description": "Learn the fundamentals of JavaScript programming and start building interactive web applications.",
+    "description": "Learn JavaScript fundamentals, build interactive web apps. Dive into syntax, data types, functions, DOM manipulation. Create dynamic, engaging user experiences in this immersive course. Gain hands-on experience through practical projects.",
     "price": 1500,
     "credit": 3
   },
@@ -21,7 +21,7 @@
     "title": "Python Fundamentals for Beginners",
     "tags": ["#Python", "#Programming", "#Tutorial"],
     "readingTime": 8,
-    "description": "Master the basics of Python programming and gain the skills to build versatile applications and automate tasks.",
+    "description": "Master Python basics, build apps, automate tasks. Learn concepts, syntax, best practices. Hands-on exercises, real-world examples. Gain confidence in creating, manipulating data, solving problems.",
     "price": 2500,
     "credit": 5
   },
@@ -34,7 +34,7 @@
     "title": "Web Development Best Practices",
     "tags": ["#WebDev", "#Coding", "#BestPractices"],
     "readingTime": 12,
-    "description": "Discover the essential techniques and industry standards to create secure, scalable, and performant web applications.",
+    "description": "Explore Web Development Best Practices and discover the industry-standard techniques for building robust and scalable web applications. Learn about responsive design, accessibility, performance optimization, etc.",
     "price": 500,
     "credit": 1
   },
@@ -47,7 +47,7 @@
     "title": "Machine Learning with Python",
     "tags": ["#MachineLearning", "#Python", "#AI"],
     "readingTime": 15,
-    "description": "Learn the foundations of machine learning and harness the power of Python to build intelligent models for data analysis and prediction.",
+    "description": "Learn the foundations of machine learning and harness the power of Python to build intelligent models for data analysis and prediction.Gain practical experience in implementing popular machine learning algorithms and techniques.",
     "price": 5500,
     "credit": 15
   },
@@ -60,7 +60,7 @@
     "title": "Building a Modern Website with React",
     "tags": ["#React", "#WebDev", "#Frontend"],
     "readingTime": 11,
-    "description": "Create dynamic and responsive websites using React, the popular JavaScript library, and modern web development techniques.",
+    "description": "Build a Modern Website with React and learn how to create reusable components, manage state, and navigate between pages to develop a fully interactive and responsive website.",
     "price": 5500,
     "credit": 10
   },
@@ -73,7 +73,7 @@
     "title": "Exploring the World of Data Science",
     "tags": ["#DataScience", "#Python", "#Analytics"],
     "readingTime": 14,
-    "description": "Dive into the fascinating field of data science and learn how to extract valuable insights from data using Python and popular data analysis tools.",
+    "description": "Embark on an exciting journey exploring the world of Data Science. Discover the principles and techniques behind data analysis, machine learning, and statistical modeling. ",
     "price": 2500,
     "credit": 4
   },
@@ -99,7 +99,7 @@
     "title": "Getting Started with React Native",
     "tags": ["#ReactNative", "#MobileDev", "#JavaScript"],
     "readingTime": 13,
-    "description": "Learn how to build cross-platform mobile applications using React Native, a popular framework that allows you to write code once and deploy on iOS and Android platforms.",
+    "description": "Learn how to build cross-platform mobile applications using React Native, a popular framework that allows you to write code once and deploy on iOS and Android platforms. ",
     "price": 3500,
     "credit": 7
   },
@@ -112,7 +112,7 @@
     "title": "Advanced JavaScript Concepts",
     "tags": ["#JavaScript", "#Programming", "#Advanced"],
     "readingTime": 12,
-    "description": "Deepen your understanding of JavaScript by exploring advanced topics such as closures, prototypes, async programming, and functional programming techniques.",
+    "description": "Deepen your understanding of JavaScript by exploring advanced topics such as closures, prototypes, async programming, and functional programming techniques. Learn how to write efficient and maintainable code and become more proficient developer.",
     "price": 3500,
     "credit": 12
   }
