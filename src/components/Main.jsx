@@ -1,5 +1,3 @@
-// import PropTypes from 'prop-types';
-
 import {useState, useEffect} from "react";
 import Cards from "./Cards";
 import Cart from "./Cart";

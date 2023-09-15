@@ -1,3 +1,8 @@
+import {
+  faBangladeshiTakaSign,
+  faBookOpen,
+} from "@fortawesome/free-solid-svg-icons";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import PropTypes from "prop-types";
 const Card = ({card, handleCard}) => {
   const {coverImage, title, description, price, credit} = card;
@@ -13,11 +18,14 @@ const Card = ({card, handleCard}) => {
       <div className="card-body px-5">
         <h2 className="card-title text-white">{title}</h2>
         <p className=" text-white opacity-50">{description}</p>
-        <p className="flex justify-between items-center w-full text-white">
-          <span className="font-semibold opacity-50"> Price: {price} BDT
+        <div className="flex justify-between items-center w-full text-white">
+          <span className="font-semibold opacity-50">
+            <FontAwesomeIcon icon={faBangladeshiTakaSign} /> Price: {price} BDT
           </span>
-          <span className="font-semibold opacity-50">Credit: {credit}Hr</span>
-        </p>
+          <span className="font-semibold opacity-50">
+            <FontAwesomeIcon icon={faBookOpen} /> Credit: {credit}hr
+          </span>
+        </div>
         <div className="card-actions w-full">
           <button
             onClick={() => handleCard(card)}
