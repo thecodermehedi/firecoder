@@ -11,7 +11,7 @@ const Main = ({toast}) => {
   const [totalCreditHour, setTotalCreditHour] = useState(0);
   const [remainingCreditHour, setRemainingCreditHour] = useState(20);
   useEffect(() => {
-    fetch("../../public/courses.json")
+    fetch("/courses.json")
       .then((res) => res.json())
       .then((data) => setCards(data));
   }, []);
