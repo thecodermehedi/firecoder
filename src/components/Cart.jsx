@@ -19,11 +19,11 @@ const Cart = ({
         {remainingCreditHour}
       </h3>
       <hr className="border border-gray-500 mt-4" />
-      <h2 className="font-bold text-2xl py-2 text-gray-300">
+      <h2 className="font-bold text-2xl pt-2 pb-5 text-gray-300">
         {" "}
-        <FontAwesomeIcon icon={faBucket} /> Courses
+        <FontAwesomeIcon icon={faBucket} /> Courses List
       </h2>
-      <ol className="flex flex-col gap-4 min-h-[19rem] list-decimal px-5">
+      <ol className="flex flex-col gap-4 min-h-[18rem] list-decimal px-5">
         {courseNames.map((course, idx) => (
           <li key={idx} id={course.id} className="font-semibold opacity-50 ">
             {course.title}
