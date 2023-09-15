@@ -10,6 +10,7 @@ const Main = ({toast}) => {
   const [courseNames, setCourseNames] = useState([]);
   const [totalCreditHour, setTotalCreditHour] = useState(0);
   const [remainingCreditHour, setRemainingCreditHour] = useState(20);
+  const [totalPrice, setTotalPrice] = useState(0);
   useEffect(() => {
     fetch("/courses.json")
       .then((res) => res.json())
@@ -18,6 +19,7 @@ const Main = ({toast}) => {
   const handleCard = (card) => {
     const newTotalCreditHour = totalCreditHour + card.credit;
     const newRemainingCreditHour = remainingCreditHour - card.credit;
+    const newTotalPrice = totalPrice + card.price;
     if (courseNames.includes(card)) {
       toast.warn("Item already added!");
       return;
@@ -30,6 +32,7 @@ const Main = ({toast}) => {
       toast.success("Item added successfully!");
       setTotalCreditHour(newTotalCreditHour);
       setRemainingCreditHour(newRemainingCreditHour);
+      setTotalPrice(newTotalPrice);
     }
   };
   return (
@@ -39,6 +42,7 @@ const Main = ({toast}) => {
         courseNames={courseNames}
         totalCreditHour={totalCreditHour}
         remainingCreditHour={remainingCreditHour}
+        totalPrice={totalPrice}
       />
     </div>
   );
