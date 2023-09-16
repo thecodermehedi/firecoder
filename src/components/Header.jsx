@@ -1,11 +1,12 @@
+import Logo from "./Logo";
+
 function Header() {
   return (
     <header>
       <nav className="flex justify-between mx-auto p-6 md:p-8">
-        <div className="logo flex justify-center items-center gap-2">
-          <img className="w-12" src="/icon.png" alt="BurnImage" />
-          <img className="w-48" src="/logo.png" alt="FireCoder" />
-        </div>
+        <a href="../../index.html">
+          <Logo />
+        </a>
         <ul className="flex gap-8 text-gray-400 font-bold text-xl">
           <a
             href="#"
@@ -14,8 +15,10 @@ function Header() {
             <li>Home</li>
           </a>
           <a
-            href="#"
+            href="https://dub.sh/blogsbymehedi"
             className="hover:text-purple-500 transition-all duration-300 "
+            target="_blank"
+            rel="noreferrer"
           >
             <li>Blogs</li>
           </a>
@@ -23,13 +26,15 @@ function Header() {
             <li>Courses</li>
           </a>
           <a
-            href="#"
+            href="https://dub.sh/mehedi"
             className="hover:text-purple-500 transition-all duration-300 "
+            target="_blank"
+            rel="noreferrer"
           >
             <li>About</li>
           </a>
           <a
-            href="#"
+            href="mailto:devbytemehedi@gmail.com"
             className="hover:text-purple-500 transition-all duration-300 "
           >
             <li>Contact</li>
