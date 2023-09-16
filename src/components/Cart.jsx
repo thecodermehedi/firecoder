@@ -1,4 +1,6 @@
-import {FaBangladeshiTakaSign, FaBookOpen, FaBucket} from "react-icons/fa6";
+import {FaBangladeshiTakaSign, FaBookOpen} from "react-icons/fa6";
+import {BsFillBagFill} from "react-icons/bs";
+import {MdRemoveCircle} from "react-icons/md";
 import PropTypes from "prop-types";
 
 const Cart = ({
@@ -6,6 +8,7 @@ const Cart = ({
   totalCreditHour,
   remainingCreditHour,
   totalPrice,
+  removeCourse,
 }) => {
   return (
     <div className="p-5 card w-[30rem] h-fit bg-white bg-opacity-10 shadow-xl rounded-xl text-white">
@@ -14,12 +17,20 @@ const Cart = ({
       </div>
       <hr className="border border-gray-500 mt-4" />
       <div className="font-bold text-2xl pt-2 pb-5 text-gray-300 flex items-center gap-2">
-        <FaBucket /> Courses List
+        <BsFillBagFill /> Courses List
       </div>
       <ol className="flex flex-col gap-4 min-h-[18rem] list-decimal px-5">
         {courseNames.map((course, idx) => (
           <li key={idx} id={course.id} className="font-semibold opacity-50 ">
-            {course.title}
+            <div className="flex items-center justify-between ">
+              {course.title}{" "}
+              <button
+                onClick={() => removeCourse(course)}
+                className="text-white  hover:text-red-600 text-2xl "
+              >
+                <MdRemoveCircle />
+              </button>
+            </div>
           </li>
         ))}
       </ol>
@@ -40,6 +51,7 @@ Cart.propTypes = {
   totalCreditHour: PropTypes.number,
   remainingCreditHour: PropTypes.number,
   totalPrice: PropTypes.number,
+  removeCourse: PropTypes.func,
 };
 
 export default Cart;

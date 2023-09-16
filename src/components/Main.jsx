@@ -21,7 +21,7 @@ const Main = ({toast}) => {
     if (courseNames.includes(card)) {
       toast.warn("Item already added!");
       return;
-    } else if (newTotalCreditHour > 20 || newRemainingCreditHour < 0) {
+    } else if (newRemainingCreditHour < 0) {
       toast.error("Credit limit reached. Cannot add item!");
       return;
     } else {
@@ -33,6 +33,21 @@ const Main = ({toast}) => {
       setTotalPrice(newTotalPrice);
     }
   };
+  const removeCourse = (card) => {
+    const newCourseList = courseNames.filter((course) => course.id !== card.id);
+    setCourseNames(newCourseList);
+    const newTotalCreditHour = totalCreditHour - card.credit;
+    setTotalCreditHour(newTotalCreditHour);
+    const newRemainingCreditHour = remainingCreditHour + card.credit;
+    if (newTotalCreditHour > 20) {
+      toast.error("Credit limit reached");
+      return;
+    }
+    setRemainingCreditHour(newRemainingCreditHour);
+    const newTotalPrice = totalPrice - card.price;
+    setTotalPrice(newTotalPrice);
+    toast.error("Item removed successfully!");
+  };
   return (
     <div className="flex gap-8 mx-auto p-6 md:p-8">
       <Cards cards={cards} handleCard={handleCard} />
@@ -41,6 +56,7 @@ const Main = ({toast}) => {
         totalCreditHour={totalCreditHour}
         remainingCreditHour={remainingCreditHour}
         totalPrice={totalPrice}
+        removeCourse={removeCourse}
       />
     </div>
   );
