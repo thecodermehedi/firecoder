@@ -3,6 +3,7 @@ import Header from "./components/Header";
 import Main from "./components/Main";
 import {ToastContainer, toast} from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import {Circle} from "react-preloaders";
 function App() {
   return (
     <>
@@ -23,6 +24,7 @@ function App() {
         <Main toast={toast} />
         <Footer />
       </div>
+      <Circle background="#0E1316" color="red" />
     </>
   );
 }
