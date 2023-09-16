@@ -10,9 +10,16 @@ const Main = ({toast}) => {
   const [remainingCreditHour, setRemainingCreditHour] = useState(20);
   const [totalPrice, setTotalPrice] = useState(0);
   useEffect(() => {
-    fetch("/courses.json")
-      .then((res) => res.json())
-      .then((data) => setCards(data));
+    const fetchData = async () => {
+      try {
+        const res = await fetch("/courses.json");
+        const data = await res.json();
+        setCards(data);
+      } catch (error) {
+        console.error("Error fetchind data:", error);
+      }
+    };
+    fetchData();
   }, []);
   const handleCard = (card) => {
     const newTotalCreditHour = totalCreditHour + card.credit;
