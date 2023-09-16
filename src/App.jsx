@@ -14,27 +14,23 @@ function App() {
   }, []);
   return (
     <>
-      {loading ? (
-        <Loading />
-      ) : (
-        <div className="bg-[#0E1316] min-h-screen ">
-          <Header />
-          <ToastContainer
-            position="bottom-right"
-            autoClose={2000}
-            hideProgressBar={false}
-            newestOnTop
-            closeOnClick
-            rtl={false}
-            pauseOnFocusLoss={false}
-            draggable={false}
-            pauseOnHover={false}
-            theme="dark"
-          />
-          <Main toast={toast} />
-          <Footer />
-        </div>
-      )}
+      <div className="bg-[#0E1316] min-h-screen ">
+        <Header />
+        <ToastContainer
+          position="bottom-right"
+          autoClose={2000}
+          hideProgressBar={false}
+          newestOnTop
+          closeOnClick
+          rtl={false}
+          pauseOnFocusLoss={false}
+          draggable={false}
+          pauseOnHover={false}
+          theme="dark"
+        />
+        {loading ? <Loading /> : <Main toast={toast} />}
+        <Footer />
+      </div>
     </>
   );
 }
