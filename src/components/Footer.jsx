@@ -19,7 +19,7 @@ const Footer = () => {
             <FaFacebook />
           </a>
           <a
-            className="text-4xl text-orange-700"
+            className="text-4xl text-red-700"
             href="https://github.com/devbytemehedi/firecoder"
           >
             <FaGithub />
