@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 const Card = ({card, handleCard}) => {
   const {coverImage, title, description, price, credit} = card;
   return (
-    <div className="card max-w-[20rem] md:w-[20rem] min-h-[35rem] bg-white bg-opacity-10 shadow-xl rounded-xl border border-transparent hover:border-purple-500 hover:drop-shadow-[0_0_7px_rgba(168,85,247,0.5)] transition-all duration-300">
+    <div className="card max-w-[20rem] md:w-[20rem] min-h-[35rem] bg-white bg-opacity-10 shadow-xl rounded-xl border border-transparent hover:border-purple-500 hover:drop-shadow-[0_0_7px_rgba(168,85,247,0.5)] transition-all duration-300 cursor-pointer">
       <figure className="px-5 pt-5">
         <img
           src={coverImage}
