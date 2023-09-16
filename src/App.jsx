@@ -1,3 +1,4 @@
+import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Main from "./components/Main";
 import {ToastContainer, toast} from "react-toastify";
@@ -20,6 +21,7 @@ function App() {
           theme="dark"
         />
         <Main toast={toast} />
+        <Footer />
       </div>
     </>
   );
