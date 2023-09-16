@@ -11,7 +11,7 @@ const Cart = ({
   removeCourse,
 }) => {
   return (
-    <div className="p-5 card w-[30rem] h-fit bg-white bg-opacity-10 shadow-xl rounded-xl text-white">
+    <div className="p-6 card w-[30rem] h-fit bg-white bg-opacity-10 shadow-xl rounded-xl text-white hidden lg:block">
       <div className="text-xl font-bold text-red-500 shadow-xl flex items-center gap-2">
         <FaBookOpen /> Credit Hour Remaining: {remainingCreditHour}
       </div>

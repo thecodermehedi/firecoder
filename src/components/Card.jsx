@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 const Card = ({card, handleCard}) => {
   const {coverImage, title, description, price, credit} = card;
   return (
-    <div className="card w-[20rem] h-[35rem] bg-white bg-opacity-10 shadow-xl rounded-xl">
+    <div className="card max-w-[20rem] md:w-[20rem] min-h-[35rem] bg-white bg-opacity-10 shadow-xl rounded-xl">
       <figure className="px-5 pt-5">
         <img
           src={coverImage}

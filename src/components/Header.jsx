@@ -1,4 +1,6 @@
 import Logo from "./Logo";
+import {FaSearch} from "react-icons/fa";
+import LoginButton from "./LoginButton";
 
 function Header() {
   return (
@@ -7,10 +9,10 @@ function Header() {
         <a href="../../index.html">
           <Logo />
         </a>
-        <ul className="flex gap-8 text-gray-400 font-bold text-xl">
+        <ul className="flex gap-8 text-gray-400 font-bold text-sm md:text-lg lg:text-xl">
           <a
             href="#"
-            className="hover:text-purple-500 transition-all duration-300 "
+            className="hover:text-purple-500 transition-all duration-300 hidden lg:block"
           >
             <li>Home</li>
           </a>
@@ -27,7 +29,7 @@ function Header() {
           </a>
           <a
             href="https://dub.sh/mehedi"
-            className="hover:text-purple-500 transition-all duration-300 "
+            className="hover:text-purple-500 transition-all duration-300 hidden md:block"
             target="_blank"
             rel="noreferrer"
           >
@@ -35,12 +37,12 @@ function Header() {
           </a>
           <a
             href="mailto:devbytemehedi@gmail.com"
-            className="hover:text-purple-500 transition-all duration-300 "
+            className="hover:text-purple-500 transition-all duration-300 hidden md:block"
           >
             <li>Contact</li>
           </a>
         </ul>
-        <div className="flex gap-4">
+        <div className="gap-4 hidden lg:flex">
           <div>
             <input
               className="border border-transparent bg-white bg-opacity-10 hover:bg-opacity-20 h-10 px-5 pr-16 rounded-xl text-sm focus:outline-none hover:border-purple-500 
@@ -56,6 +58,14 @@ function Header() {
           >
             login
           </button>
+        </div>
+        <div className="gap-4 flex lg:hidden items-center justify-center text-sm md:text-lg">
+          <div className="text-red-600 cursor-pointer hover:text-purple-600">
+            <FaSearch />
+          </div>
+          <div className="text-red-600 cursor-pointer hover:text-purple-600">
+            <LoginButton />
+          </div>
         </div>
       </nav>
     </header>
