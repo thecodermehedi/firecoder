@@ -9,7 +9,7 @@ function App() {
       <div className="bg-[#0E1316] min-h-screen ">
         <Header />
         <ToastContainer
-          position="top-right"
+          position="bottom-right"
           autoClose={2000}
           hideProgressBar={false}
           newestOnTop
