@@ -8,7 +8,7 @@ const Card = ({card, handleCard}) => {
         <img
           src={coverImage}
           alt="Shoes"
-          className="rounded-xl max-w-72 w-fit h-48"
+          className="rounded-xl max-w-72 w-fit h-48 object-cover"
         />
       </figure>
       <div className="card-body px-5">
